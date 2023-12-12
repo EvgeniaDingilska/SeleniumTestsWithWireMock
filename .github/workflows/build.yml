@@ -4,14 +4,34 @@ jobs:
   build-node-express:
     name: Build Node
     runs-on: ubuntu-latest
-    container: node:14
+    env: 
+      API_PORT: 3000
     steps:
-      - run: node --version
-      - run: npm --version
       - uses: actions/checkout@v2
-      - run: npm install
-        working-directory: ./Web
-      - run: node Web/server.js
+      - uses: ./Web/background-action@v1
+        name: Run node on background
+        with:
+         run: |
+           npm install &
+           node Web/server.js &
+         wait-on: |
+            http://localhost:${{ env.API_PORT }}
+            http-get://localhost:3000
+        
+         tail: true # true = stderr,stdout
+            # This will allow you to monitor the progress live
+  
+         log-output-resume: stderr
+            # Eliminates previosuly output stderr log entries from post-run output
+  
+         wait-for: 5m
+  
+         log-output: stderr,stdout # same as true
+  
+         log-output-if: failure
+            # failure = exit-early or timeout
+  
+         working-directory: backend
   build-java:
     name: Build Java
     runs-on: ubuntu-latest

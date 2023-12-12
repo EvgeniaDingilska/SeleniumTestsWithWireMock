@@ -1,0 +1,27 @@
+name: Node CI
+on: push
+jobs:
+  build-node-express:
+    name: Build Node
+    runs-on: ubuntu-latest
+    container: node:14
+    steps:
+      - run: node --version
+      - run: npm --version
+      - uses: actions/checkout@v2
+      - run: npm install
+        working-directory: ./Web
+      - run: node Web/server.js
+  build-java:
+    name: Build Java
+    runs-on: ubuntu-latest
+    container: node:14
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+      - run: java -jar WireMock/wiremock-jre8-standalone-2.35.0.jar --port=8081 --https-port=8082
