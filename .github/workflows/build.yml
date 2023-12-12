@@ -1,20 +1,36 @@
-on: push
+name: .NET CI
+
+on:
+  push:
+    branches:
+      - master
+    build:
+    runs-on: windows-latest
 
 jobs:
-  test:
-    runs-on: windows-latest
-    name: Set up WireMock as a standalone process
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          java-version: '11'
-      - name: Action E2E Test
-        uses: WireMock
-        id: setup-wiremock
-        
-      - name: Get the WireMock standard output
-        run: java -jar wiremock-jre8-standalone-2.35.0.jar --port=8081 --https-port=8082
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '3.1'
+
+    - name: Build
+      run: |
+        dotnet restore
+        dotnet build --configuration Release
+jobs:
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Java
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+
+    - name: Build with Maven
+      run: |
+        ./mvnw clean install
