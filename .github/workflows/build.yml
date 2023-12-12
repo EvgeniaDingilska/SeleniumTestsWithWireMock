@@ -24,8 +24,4 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
-  wire-mock:
-    name: Run wiremock
-    runs-on: ubuntu-latest
-    steps:
       - run: java -jar wiremock-jre8-standalone-2.35.0.jar --port=8081 --https-port=8082
