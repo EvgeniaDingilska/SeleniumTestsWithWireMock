@@ -1,66 +1,7 @@
-name: Multi-Language Workflow
-
-on:
-  push:
-    branches:
-      - master
+on: push
 
 jobs:
-  java:
-    runs-on: windows-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Setup Java
-        uses: actions/setup-java@v2
-        with:
-          java-version: '11'
-
-      - name: Build with Maven
-        run: |
-          ./mvnw clean install
-
-  dotnet:
-    runs-on: windows-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v2
-        with:
-          dotnet-version: '3.1'
-
-      - name: Build
-        run: |
-          dotnet restore
-          dotnet build --configuration Release
-
-  nodejs:
-    runs-on: windows-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Install dependencies
-        run: |
-          npm install
-
-  selenium:
-    runs-on: windows-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Run Selenium tests
-        run: |
-          # Your Selenium test command here
+  run-on: windows-latest
+  step:
+    - run: node --version
+    - run: npm --version
