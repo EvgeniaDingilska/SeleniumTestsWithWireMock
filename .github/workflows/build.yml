@@ -1,0 +1,20 @@
+on: push
+
+jobs:
+  test:
+    runs-on: windows-latest
+    name: Set up WireMock as a standalone process
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+      - name: Action E2E Test
+        uses: WireMock
+        id: setup-wiremock
+        
+      - name: Get the WireMock standard output
+        run: java -jar wiremock-jre8-standalone-2.35.0.jar --port=8081 --https-port=8082
