@@ -17,4 +17,21 @@ jobs:
     runs-on: ubuntu-latest
     container: node:14
     steps:
-      - run: java --version
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+      - name: Action E2E Test
+        uses: WireMock
+        id: setup-wiremock
+        with:
+          http-port: '8080'
+          mappings: 'WireMock/mappings'
+          files: 'WireMock/__files'
+          command: 'node example.test.js'
+          verbose: false
+      - name: Get the WireMock standard output
+        run: echo "${{ steps.setup-wiremock.outputs.wiremock-stdout }}"
