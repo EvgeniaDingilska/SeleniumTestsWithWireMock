@@ -24,4 +24,4 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
-      - run: java -jar wiremock-jre8-standalone-2.35.0.jar --port=8081 --https-port=8082
+      - run: java -jar WireMock/wiremock-jre8-standalone-2.35.0.jar --port=8081 --https-port=8082
