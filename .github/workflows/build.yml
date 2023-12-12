@@ -1,7 +1,7 @@
 name: Node CI
 on: push
 jobs:
-  build-node:
+  build-node-express:
     name: Build Node
     runs-on: ubuntu-latest
     container: node:14
@@ -12,3 +12,9 @@ jobs:
       - run: npm install
         working-directory: ./Web
       - run: node Web/server.js
+  build-java:
+    name: Build Java
+    runs-on: ubuntu-latest
+    container: node:14
+    steps:
+      - run: java --version
