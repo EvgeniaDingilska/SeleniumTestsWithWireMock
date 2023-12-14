@@ -14,23 +14,6 @@ jobs:
          run: |
            npm install &
            node Web/server.js &
-         wait-on: |
-            http://localhost:${{ env.API_PORT }}
-            http-get://localhost:3000
-        
-         tail: true # true = stderr,stdout
-            # This will allow you to monitor the progress live
-  
-         log-output-resume: stderr
-            # Eliminates previosuly output stderr log entries from post-run output
-  
-         wait-for: 5m
-  
-         log-output: stderr,stdout # same as true
-  
-         log-output-if: failure
-            # failure = exit-early or timeout
-  
          working-directory: backend
   build-java:
     name: Build Java
