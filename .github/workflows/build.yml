@@ -8,7 +8,7 @@ jobs:
       API_PORT: 3000
     steps:
       - uses: actions/checkout@v2
-      - uses: JarvusInnovations/background-action@v1
+      - uses: BerniWittmann/background-server-action@v1
         name: Run node on background
         with:
          run: |
