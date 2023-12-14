@@ -10,7 +10,7 @@ jobs:
         name: Run node on background
         with:
          cwd: ./Web
-         start: npm start
+      - run: npm start
   build-java:
     name: Build Java
     runs-on: ubuntu-latest
