@@ -1,13 +1,20 @@
-name: Node CI
+name: Web CI/CD in Git
+#What to trigger this action
 on: push
+#First job which gonna be execute
 jobs:
+  #job var which you can use in the above step
   build-node-express:
+    # Name of the step
     name: Build Node
+    # Which OS we gonna use
     runs-on: ubuntu-latest
+    #Steps to execute 
     steps:
-      - uses: actions/checkout@v2
-      - uses: BerniWittmann/background-server-action@v1
-        name: Run node on background
+      - name: Checkout 
+        uses: actions/checkout@v2
+      - name: Set server as background process
+        uses: BerniWittmann/background-server-action@v1
         with:
          cwd: ./Web
          start: npm start
@@ -16,7 +23,6 @@ jobs:
   build-java:
     name: Build Java
     runs-on: ubuntu-latest
-    container: node:14
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -25,4 +31,14 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
-      - run: java -jar WireMock/wiremock-jre8-standalone-2.35.0.jar --port=8081 --https-port=8082
+  start-wiremock-on-backgorund:
+    name: Start Wire Mock
+    runs-on: ubuntu-latest
+    steps:
+      - name: Background server
+        uses: BerniWittmann/background-server-action@v1
+        with:
+         cwd: ./WireMock
+         start: java -jar wiremock-jre8-standalone-2.35.0.jar --port=8081 --https-port=8082
+         #wait on the port
+         wait-on: 'http://localhost:8081'
