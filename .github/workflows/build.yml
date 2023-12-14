@@ -10,7 +10,7 @@ jobs:
         name: Run node on background
         with:
          cwd: ./Web
-         start: npm server.js
+         start: npm start
          #wait on the port
          wait-on: 'http://localhost:3000'
   build-java:
