@@ -41,9 +41,9 @@ jobs:
           id: setup-wiremock
           with:
            http-port: '8080'
-           mappings: 'example-mapping-directory'
-           files: 'example-files-directory'
-           command: 'node example.test.js'
+           mappings: 'WireMock/mappings'
+           files: 'WireMock/__files'
+           start: java -jar wiremock-jre8-standalone-2.35.0.jar --port=8081 --https-port=8082 --enable-stub-cors 
            verbose: false
         - name: Get the WireMock standard output
           run: echo "${{ steps.setup-wiremock.outputs.wiremock-stdout }}"
