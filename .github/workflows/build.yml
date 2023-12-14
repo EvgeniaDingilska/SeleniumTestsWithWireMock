@@ -11,6 +11,8 @@ jobs:
         with:
          cwd: ./Web
          start: npm server.js
+         #wait on the port
+         wait-on: 'http://localhost:3000'
   build-java:
     name: Build Java
     runs-on: ubuntu-latest
