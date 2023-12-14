@@ -21,7 +21,7 @@ jobs:
          verbos: true
          #wait on the port
          wait-on: 'http://localhost:3000'
-  build-java:
+  java-and-wiremock:
     runs-on: ubuntu-latest
     name: Set up WireMock as a standalone process
     steps:
