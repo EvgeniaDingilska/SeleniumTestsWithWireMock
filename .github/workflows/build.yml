@@ -21,6 +21,9 @@ jobs:
          verbos: true
          #wait on the port
          wait-on: 'http://localhost:3000'
+      - name: Puppeteer
+        run: npm install puppeteer
+      - run: node openChrome.js
   java-and-wiremock:
     runs-on: ubuntu-latest
     name: Set up WireMock as a standalone process
