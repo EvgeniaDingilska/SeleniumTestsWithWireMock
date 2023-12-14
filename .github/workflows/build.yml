@@ -18,6 +18,7 @@ jobs:
         with:
          cwd: ./Web
          start: npm start
+         verbos: true
          #wait on the port
          wait-on: 'http://localhost:3000'
   build-java:
@@ -32,13 +33,17 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
   start-wiremock-on-backgorund:
-    name: Start Wire Mock
     runs-on: ubuntu-latest
+    name: WireMock
     steps:
-      - name: Background server
-        uses: BerniWittmann/background-server-action@v1
-        with:
-         cwd: ./WireMock
-         start: java -jar wiremock-jre8-standalone-2.35.0.jar --port=8081 --https-port=8082
-         #wait on the port
-         wait-on: 'http://localhost:8081'
+        - name: Set up WireMock as a standalone process
+          uses: williamhaw/setup-wiremock-action@v0.1.2
+          id: setup-wiremock
+          with:
+           http-port: '8080'
+           mappings: 'example-mapping-directory'
+           files: 'example-files-directory'
+           command: 'node example.test.js'
+           verbose: false
+        - name: Get the WireMock standard output
+          run: echo "${{ steps.setup-wiremock.outputs.wiremock-stdout }}"
