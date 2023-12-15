@@ -21,9 +21,10 @@ jobs:
          verbos: true
          #wait on the port
          wait-on: 'http://localhost:3000'
-      - name: Puppeteer
-        run: npm install puppeteer
-      - run: node openChrome.js
+      # Verification of website content
+      # - name: Puppeteer
+      #   run: npm install puppeteer
+      # - run: node openChrome.js
   java-and-wiremock:
     runs-on: ubuntu-latest
     name: Set up WireMock as a standalone process
@@ -46,3 +47,11 @@ jobs:
          verbose: false
       - name: Get the WireMock standard output
         run: echo "${{ steps.setup-wiremock.outputs.wiremock-stdout }}"
+  install-dot-net:
+    runs-on: ununtu-latest
+    name: Install .Net
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '3.1.x'
