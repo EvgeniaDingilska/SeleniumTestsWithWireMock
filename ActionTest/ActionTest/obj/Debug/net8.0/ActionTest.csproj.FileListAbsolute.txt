@@ -27,3 +27,33 @@ C:\Users\EVG\source\repos\ActionTest\ActionTest\obj\Debug\net8.0\refint\ActionTe
 C:\Users\EVG\source\repos\ActionTest\ActionTest\obj\Debug\net8.0\ActionTest.pdb
 C:\Users\EVG\source\repos\ActionTest\ActionTest\obj\Debug\net8.0\ActionTest.genruntimeconfig.cache
 C:\Users\EVG\source\repos\ActionTest\ActionTest\obj\Debug\net8.0\ref\ActionTest.dll
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\NUnit3.TestAdapter.dll
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\nunit.engine.dll
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\nunit.engine.api.dll
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\nunit.engine.core.dll
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\testcentric.engine.metadata.dll
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\ActionTest.exe
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\ActionTest.deps.json
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\ActionTest.runtimeconfig.json
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\ActionTest.dll
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\ActionTest.pdb
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\nunit.framework.dll
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\nunit.framework.legacy.dll
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\bin\Debug\net8.0\WebDriver.dll
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\obj\Debug\net8.0\ActionTest.csproj.AssemblyReference.cache
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\obj\Debug\net8.0\ActionTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\obj\Debug\net8.0\ActionTest.AssemblyInfoInputs.cache
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\obj\Debug\net8.0\ActionTest.AssemblyInfo.cs
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\obj\Debug\net8.0\ActionTest.csproj.CoreCompileInputs.cache
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\obj\Debug\net8.0\ActionTest.sourcelink.json
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\obj\Debug\net8.0\ActionTest.csproj.CopyComplete
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\obj\Debug\net8.0\ActionTest.dll
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\obj\Debug\net8.0\refint\ActionTest.dll
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\obj\Debug\net8.0\ActionTest.pdb
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\obj\Debug\net8.0\ActionTest.genruntimeconfig.cache
+C:\Users\EVG\OneDrive - Milestone Systems\Desktop\node-ex-website\OnePageWebsite\ActionTest\ActionTest\obj\Debug\net8.0\ref\ActionTest.dll

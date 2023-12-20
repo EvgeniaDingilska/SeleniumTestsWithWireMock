@@ -17,7 +17,7 @@ jobs:
         uses: BerniWittmann/background-server-action@v1
         with:
          cwd: ./Web
-         start: npm server.js
+         start: npm start
          verbos: true
          #wait on the port
          wait-on: 'http://localhost:3000'

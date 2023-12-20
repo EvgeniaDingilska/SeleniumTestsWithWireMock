@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\EVG\\source\\repos\\ActionTest\\ActionTest\\ActionTest.csproj": {}
+    "C:\\Users\\EVG\\OneDrive - Milestone Systems\\Desktop\\node-ex-website\\OnePageWebsite\\ActionTest\\ActionTest\\ActionTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\EVG\\source\\repos\\ActionTest\\ActionTest\\ActionTest.csproj": {
+    "C:\\Users\\EVG\\OneDrive - Milestone Systems\\Desktop\\node-ex-website\\OnePageWebsite\\ActionTest\\ActionTest\\ActionTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\EVG\\source\\repos\\ActionTest\\ActionTest\\ActionTest.csproj",
+        "projectUniqueName": "C:\\Users\\EVG\\OneDrive - Milestone Systems\\Desktop\\node-ex-website\\OnePageWebsite\\ActionTest\\ActionTest\\ActionTest.csproj",
         "projectName": "ActionTest",
-        "projectPath": "C:\\Users\\EVG\\source\\repos\\ActionTest\\ActionTest\\ActionTest.csproj",
+        "projectPath": "C:\\Users\\EVG\\OneDrive - Milestone Systems\\Desktop\\node-ex-website\\OnePageWebsite\\ActionTest\\ActionTest\\ActionTest.csproj",
         "packagesPath": "C:\\Users\\EVG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\EVG\\source\\repos\\ActionTest\\ActionTest\\obj\\",
+        "outputPath": "C:\\Users\\EVG\\OneDrive - Milestone Systems\\Desktop\\node-ex-website\\OnePageWebsite\\ActionTest\\ActionTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EVG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[3.8.0-alpha1, )"
             },
             "Selenium.Chrome.WebDriver": {
               "target": "Package",
