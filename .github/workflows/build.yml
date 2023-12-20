@@ -55,6 +55,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Install .Net
         uses: actions/setup-dotnet@v3
+        run: pwd
         with:
           cwd: ./ActionTest
           dotnet-version: '8.0.100'
@@ -69,4 +70,4 @@ jobs:
     name: Test Selenium c# 
     steps:
       - name: Run Selenium test
-        run: dotnet test ./ActionTest/ActionTest/bin/Debug/net8.0/ActionTest.dll
+        run: dotnet test ActionTest/ActionTest/bin/Debug/net8.0/ActionTest.dll
