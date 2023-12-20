@@ -25,28 +25,28 @@ jobs:
       # - name: Puppeteer
       #   run: npm install puppeteer
       # - run: node openChrome.js
-  java-and-wiremock:
-    runs-on: ubuntu-latest
-    name: Set up WireMock as a standalone process
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          java-version: '11'
-      - name: Run WireMock
-        uses: williamhaw/setup-wiremock-action@v0.1.2
-        id: setup-wiremock
-        with:
-         http-port: '8080'
-         mappings: 'WireMock/mappings'
-         files: 'Wiremock/__files'
-         #command: 'java -jar wiremock-jre8-standalone-2.35.0.jar --port=8081 --https-port=8082 --enable-stub-cors '
-         verbose: false
-      - name: Get the WireMock standard output
-        run: echo "${{ steps.setup-wiremock.outputs.wiremock-stdout }}"
+  # java-and-wiremock:
+  #   runs-on: ubuntu-latest
+  #   name: Set up WireMock as a standalone process
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v3
+  #     - name: Setup Java
+  #       uses: actions/setup-java@v3
+  #       with:
+  #         distribution: 'temurin'
+  #         java-version: '11'
+  #     - name: Run WireMock
+  #       uses: williamhaw/setup-wiremock-action@v0.1.2
+  #       id: setup-wiremock
+  #       with:
+  #        http-port: '8080'
+  #        mappings: 'WireMock/mappings'
+  #        files: 'Wiremock/__files'
+  #        #command: 'java -jar wiremock-jre8-standalone-2.35.0.jar --port=8081 --https-port=8082 --enable-stub-cors '
+  #        verbose: false
+  #     - name: Get the WireMock standard output
+  #       run: echo "${{ steps.setup-wiremock.outputs.wiremock-stdout }}"
   install-dot-net:
     runs-on: ununtu-latest
     name: Install .Net
