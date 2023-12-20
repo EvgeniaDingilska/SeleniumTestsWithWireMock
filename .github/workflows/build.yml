@@ -3,24 +3,24 @@ name: Web CI/CD in Git
 on: push
 #First job which gonna be execute
 jobs:
-  #job var which you can use in the above step
-  build-node-express:
-    # Name of the step
-    name: Build Node
-    # Which OS we gonna use
-    runs-on: ubuntu-latest
-    #Steps to execute 
-    steps:
-      - name: Checkout 
-        uses: actions/checkout@v2
-      - name: Set server as background process
-        uses: BerniWittmann/background-server-action@v1
-        with:
-         cwd: ./Web
-         start: npm start
-         verbos: true
-         #wait on the port
-         wait-on: 'http://localhost:3000'
+  # #job var which you can use in the above step
+  # build-node-express:
+  #   # Name of the step
+  #   name: Build Node
+  #   # Which OS we gonna use
+  #   runs-on: ubuntu-latest
+  #   #Steps to execute 
+  #   steps:
+  #     - name: Checkout 
+  #       uses: actions/checkout@v2
+  #     - name: Set server as background process
+  #       uses: BerniWittmann/background-server-action@v1
+  #       with:
+  #        cwd: ./Web
+  #        start: npm start
+  #        verbos: true
+  #        #wait on the port
+  #        wait-on: 'http://localhost:3000'
       # Verification of website content
       # - name: Puppeteer
       #   run: npm install puppeteer
