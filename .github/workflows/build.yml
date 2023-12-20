@@ -48,7 +48,7 @@ jobs:
   #     - name: Get the WireMock standard output
   #       run: echo "${{ steps.setup-wiremock.outputs.wiremock-stdout }}"
   install-dot-net:
-    runs-on: ubuntu-latest
+    runs-on: windols-latest
     name: Install .Net
     steps:
       - name: Checkout
