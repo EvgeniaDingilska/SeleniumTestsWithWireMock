@@ -58,7 +58,7 @@ jobs:
         with:
           dotnet-version: '8.0.x'
           run: pwd
-          cwd: ./Test
+          cwd: ./Test/ActionTest.sln
 
       - name: Build
         run: dotnet build
