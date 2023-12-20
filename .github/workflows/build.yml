@@ -68,4 +68,4 @@ jobs:
     name: Test Selenium c# 
     steps:
       - name: Run Selenium test
-        run: dotnet test ActionTest/ActionTest/bin/Debug/net8.0/ActionTest.dll
+        run: dotnet test ActionTest.dll
