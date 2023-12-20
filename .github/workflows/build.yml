@@ -17,7 +17,7 @@ jobs:
         uses: BerniWittmann/background-server-action@v1
         with:
          cwd: ./Web
-         start: npm start
+         start: npm server.js
          verbos: true
          #wait on the port
          wait-on: 'http://localhost:3000'
@@ -57,13 +57,19 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.0.100'
+        
       - name: Restore dependencies
+        cwd: ./ActionTest
         run: dotnet restore
+
+      - name: Build
+        run: dotnet build
+
 
       - name: Test
         run: dotnet test --configuration Release
 
       - name: Run Selenium test
-        run: dotnet test --filter FullyQualifiedName~ActionTest.TestOne
+        run: dotnet test ActionTest/ActionTest/bin/Debug/net8.0/ActionTest.dll
 
 
