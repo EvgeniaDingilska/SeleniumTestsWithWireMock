@@ -56,16 +56,10 @@ jobs:
       - name: Install .Net
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.100'
-        
-      - name: Restore dependencies
-        run: dotnet restore
+          dotnet-version: '8.0.x'
 
       - name: Build
         run: dotnet build
-  run-test:
-    runs-on: ubuntu-latest
-    name: Test Selenium c# 
-    steps:
+        
       - name: Run Selenium test
-        run: dotnet test ActionTest/ActionTest.dll
+        run: dotnet --no-build --verbosity normal
