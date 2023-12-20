@@ -57,8 +57,6 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.0.x'
-          run: pwd
-          cwd: ./Test/ActionTest.sln
 
       - name: Build
         run: dotnet build
