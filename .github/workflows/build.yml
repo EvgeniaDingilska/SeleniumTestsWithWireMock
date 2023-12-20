@@ -64,9 +64,9 @@ jobs:
 
       - name: Build
         run: dotnet build
-
-      - name: Test
-        run: dotnet test --configuration Release
+  run-test:
+    runs-on: ununtu-latest
+    name: Test Selenium c# 
 
       - name: Run Selenium test
-        run: dotnet test ActionTest/ActionTest/bin/Debug/net8.0/ActionTest.dll
+        run: dotnet test ./ActionTest/ActionTest/bin/Debug/net8.0/ActionTest.dll
