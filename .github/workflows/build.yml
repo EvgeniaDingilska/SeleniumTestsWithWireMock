@@ -57,19 +57,16 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.0.100'
+          cwd: ./ActionTest
         
       - name: Restore dependencies
-        cwd: ./ActionTest
         run: dotnet restore
 
       - name: Build
         run: dotnet build
-
 
       - name: Test
         run: dotnet test --configuration Release
 
       - name: Run Selenium test
         run: dotnet test ActionTest/ActionTest/bin/Debug/net8.0/ActionTest.dll
-
-
