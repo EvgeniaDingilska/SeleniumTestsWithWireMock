@@ -65,6 +65,6 @@ jobs:
 
       - name: Run UnitTests
         working-directory: ./LoginTest
-        run: .\NUnit.ConsoleRunner.3.16.3\tools\nunit3-console.exe LoginTest\bin\Debug\LoginTest.dll
+        run: nunit3-console.exe LoginTest\bin\Debug\LoginTest.dll
         
         
