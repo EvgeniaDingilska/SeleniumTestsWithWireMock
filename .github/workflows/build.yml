@@ -1,6 +1,8 @@
 name: Web CI/CD in Git
 #What to trigger this action
 on: push
+env:
+  dir: ./LoginTest
 #First job which gonna be execute
 jobs:
   # #job var which you can use in the above step
@@ -62,6 +64,7 @@ jobs:
         run: nuget install NUnit.ConsoleRunner -Version 3.16.3
 
       - name: Run UnitTests
-        run: .\NUnit.ConsoleRunner.3.16.3\tools\nunit3-console.exe LoginTest\LoginTest\bin\Debug\LoginTest.dll
+        working-directory: ./LoginTest
+        run: .\NUnit.ConsoleRunner.3.16.3\tools\nunit3-console.exe LoginTest\bin\Debug\LoginTest.dll
         
         
