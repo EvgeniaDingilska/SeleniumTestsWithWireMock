@@ -62,6 +62,6 @@ jobs:
         run: nuget install NUnit.ConsoleRunner -Version 3.16.3 -DirectDownload -OutputDirectory
 
       - name: Run UnitTests
-        run: packages\NUnit.ConsoleRunner.3.12.0\tools\nunit3-console.exe Test\LoginTest.dll
+        run: packages\NUnit.ConsoleRunner.3.16.3\tools\nunit3-console.exe Test\LoginTest.dll
         
         
