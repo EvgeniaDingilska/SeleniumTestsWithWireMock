@@ -1,16 +1,17 @@
 ﻿using NUnit.Framework;
-using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ActionTest
+namespace LoginTest
 {
     [TestFixture]
-    internal class TestOne
+    public class VerifyTitle
     {
         private IWebDriver driver;
 
@@ -32,10 +33,10 @@ namespace ActionTest
             // Add your test logic, such as finding elements and interacting with the page
 
             // For example, assert that the title contains "Google"
-            Assert.That(driver.Title.Contains("W3.CSS Template"), Is.True, "The title is the write one");
+            Assert.That(driver.Title.Contains("W3.CSS Template"), Is.True, "Incorrect");
 
             // For demonstration purposes, sleep for a moment (replace with proper waiting)
-            Thread.Sleep(3000);
+            System.Threading.Thread.Sleep(3000);
         }
 
         [TearDown]
@@ -44,6 +45,5 @@ namespace ActionTest
             // Close the browser after the test
             driver.Quit();
         }
-
     }
 }
