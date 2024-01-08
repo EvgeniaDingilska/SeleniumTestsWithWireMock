@@ -66,9 +66,9 @@ jobs:
         run: echo "${{ github.workspace }}"
       
       - name: Build
-        run:  msbuild.exe LoginTest.sln
+        run:  msbuild.exe .\LoginTest\LoginTest.sln
      
       - name: Run Test
-        run: .\LoginTest\obj\Debug\nunit3-console.exe .\LoginTest\obj\Debug\LoginTest.dll
+        run: .\LoginTest\LoginTest\obj\Debug\nunit3-console.exe .\LoginTest\LoginTest\obj\Debug\LoginTest.dll
         
         
