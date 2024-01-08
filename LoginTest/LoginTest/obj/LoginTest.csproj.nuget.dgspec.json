@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\EVG\\OneDrive - Milestone Systems\\Desktop\\EvgeniaDingilska-SeleniumWireMockWith-master\\EvgeniaDingilska\\LoginTest\\LoginTest\\LoginTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\EVG\\OneDrive - Milestone Systems\\Desktop\\EvgeniaDingilska-SeleniumWireMockWith-master\\EvgeniaDingilska\\LoginTest\\LoginTest\\LoginTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EVG\\OneDrive - Milestone Systems\\Desktop\\EvgeniaDingilska-SeleniumWireMockWith-master\\EvgeniaDingilska\\LoginTest\\LoginTest\\LoginTest.csproj",
+        "projectName": "LoginTest",
+        "projectPath": "C:\\Users\\EVG\\OneDrive - Milestone Systems\\Desktop\\EvgeniaDingilska-SeleniumWireMockWith-master\\EvgeniaDingilska\\LoginTest\\LoginTest\\LoginTest.csproj",
+        "packagesPath": "C:\\Users\\EVG\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EVG\\OneDrive - Milestone Systems\\Desktop\\EvgeniaDingilska-SeleniumWireMockWith-master\\EvgeniaDingilska\\LoginTest\\LoginTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\EVG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.15.4, )",
+              "generatePathProperty": true
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.16.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

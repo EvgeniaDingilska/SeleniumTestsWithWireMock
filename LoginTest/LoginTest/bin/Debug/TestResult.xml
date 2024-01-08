@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="1" result="Failed" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.15.4.0" clr-version="4.0.30319.42000" start-time="2024-01-08 11:36:18Z" end-time="2024-01-08 11:36:25Z" duration="6.748815">
+  <command-line><![CDATA["C:\Users\EVG\OneDrive - Milestone Systems\Desktop\EvgeniaDingilska-SeleniumWireMockWith-master\EvgeniaDingilska\LoginTest\LoginTest\bin\Debug\nunit3-console.exe" .\LoginTest.dll]]></command-line>
+  <test-suite type="Assembly" id="1-1002" name="LoginTest.dll" fullname="C:\Users\EVG\OneDrive - Milestone Systems\Desktop\EvgeniaDingilska-SeleniumWireMockWith-master\EvgeniaDingilska\LoginTest\LoginTest\bin\Debug\LoginTest.dll" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2024-01-08T11:36:19.1545173Z" end-time="2024-01-08T11:36:25.4655608Z" duration="6.311159" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.14.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.19045.0" platform="Win32NT" cwd="C:\Users\EVG\OneDrive - Milestone Systems\Desktop\EvgeniaDingilska-SeleniumWireMockWith-master\EvgeniaDingilska\LoginTest\LoginTest\bin\Debug" machine-name="BGWS-EVG-03" user="evg" user-domain="MILESTONE" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\EVG\OneDrive - Milestone Systems\Desktop\EvgeniaDingilska-SeleniumWireMockWith-master\EvgeniaDingilska\LoginTest\LoginTest\bin\Debug" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="TargetRuntimeFramework" value="net-4.7.2" />
+      <setting name="NumberOfTestWorkers" value="16" />
+    </settings>
+    <properties>
+      <property name="_PID" value="11708" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1-1003" name="LoginTest" fullname="LoginTest" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2024-01-08T11:36:19.1634952Z" end-time="2024-01-08T11:36:25.4655608Z" duration="6.302000" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1-1000" name="VerifyTitle" fullname="LoginTest.VerifyTitle" classname="LoginTest.VerifyTitle" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2024-01-08T11:36:19.1654890Z" end-time="2024-01-08T11:36:25.4655608Z" duration="6.300194" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1-1001" name="LoginToWebsite" fullname="LoginTest.VerifyTitle.LoginToWebsite" methodname="LoginToWebsite" classname="LoginTest.VerifyTitle" runstate="Runnable" seed="2127952661" result="Failed" label="Error" start-time="2024-01-08T11:36:19.1674823Z" end-time="2024-01-08T11:36:25.4625702Z" duration="6.295720" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.WebDriverException : unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.199)]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at LoginTest.VerifyTitle.LoginToWebsite() in C:\Users\EVG\OneDrive - Milestone Systems\Desktop\EvgeniaDingilska-SeleniumWireMockWith-master\EvgeniaDingilska\LoginTest\LoginTest\VerifyTitle.cs:line 25]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
