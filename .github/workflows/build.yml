@@ -1,8 +1,8 @@
 name: Web CI/CD in Git
 #What to trigger this action
 on: push
-env:
-  dir: ./LoginTest
+# env:
+#   dir: ./LoginTest
 #First job which gonna be execute
 jobs:
   #job var which you can use in the above step
@@ -43,7 +43,7 @@ jobs:
         uses: williamhaw/setup-wiremock-action@v0.1.2
         id: setup-wiremock
         with:
-         http-port: '8081'
+         http-port: '8080'
          mappings: 'WireMock/mappings'
          files: 'Wiremock/__files'
          command: 'java -jar wiremock-jre8-standalone-2.35.0.jar --port=8081 --https-port=8082 --enable-stub-cors '
