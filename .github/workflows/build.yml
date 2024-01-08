@@ -65,6 +65,9 @@ jobs:
       - name: print wd
         run: echo "${{ github.workspace }}"
       
+      - name: Restore
+        run:  msbuild.exe /t:Restore .\LoginTest\LoginTest.sln
+
       - name: Build
         run:  msbuild.exe .\LoginTest\LoginTest.sln
      
