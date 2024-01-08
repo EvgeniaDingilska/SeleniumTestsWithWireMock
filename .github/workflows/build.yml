@@ -53,6 +53,7 @@ jobs:
   install-dot-net:
     runs-on: windows-latest
     name: Install .Net
+    needs: java-and-wiremock
     steps:
       - name: Checkout
         uses: actions/checkout@v3
