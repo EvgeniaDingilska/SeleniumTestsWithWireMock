@@ -75,6 +75,7 @@ jobs:
         run:  msbuild.exe .\LoginTest\LoginTest.sln
      
       - name: Run Test
-        run: .\LoginTest\LoginTest\bin\Debug\nunit3-console.exe .\LoginTest\LoginTest\bin\Debug\LoginTest.dll
+        working-directory: .\LoginTest\LoginTest\bin\Debug\
+        run: nunit3-console.exe .\LoginTest\LoginTest\bin\Debug\LoginTest.dll
         
         
