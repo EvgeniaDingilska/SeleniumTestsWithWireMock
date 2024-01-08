@@ -64,9 +64,12 @@ jobs:
         
       - name: print wd
         run: echo "${{ github.workspace }}"
-      
-      - name: Restore
-        run:  msbuild.exe /t:Restore .\LoginTest\LoginTest.sln
+
+      - name: Setup Nuget
+        uses: Nuget/setup-nuget@v1.0.5
+
+      - name: Restore nuget packages
+        run: nuget restore .\LoginTest\LoginTest.sln
 
       - name: Build
         run:  msbuild.exe .\LoginTest\LoginTest.sln
