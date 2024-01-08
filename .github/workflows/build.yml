@@ -63,7 +63,7 @@ jobs:
         uses: microsoft/setup-msbuild@v1
         
       - name: Build
-        run:  msbuild.exe .\LoginTest.sln
+        run:  msbuild.exe LoginTest.sln
      
       - name: Run Test
         run: .\LoginTest\obj\Debug\nunit3-console.exe .\LoginTest\obj\Debug\LoginTest.dll
