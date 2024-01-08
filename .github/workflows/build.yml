@@ -62,7 +62,9 @@ jobs:
       - name: Setup MSBuild Path
         uses: microsoft/setup-msbuild@v1
         
+        
       - name: Build
+        run: echo "${{ github.workspace }}"
         run:  msbuild.exe LoginTest.sln
      
       - name: Run Test
