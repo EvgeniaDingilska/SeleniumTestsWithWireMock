@@ -76,6 +76,6 @@ jobs:
      
       - name: Run Test
         working-directory: .\LoginTest\LoginTest\bin\Debug\
-        run: nunit3-console.exe .\LoginTest\LoginTest\bin\Debug\LoginTest.dll
+        run: .\nunit3-console.exe .\LoginTest\LoginTest\bin\Debug\LoginTest.dll
         
         
