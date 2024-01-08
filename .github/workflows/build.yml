@@ -43,7 +43,7 @@ jobs:
         uses: williamhaw/setup-wiremock-action@v0.1.2
         id: setup-wiremock
         with:
-         http-port: '8080'
+         http-port: '8081'
          mappings: 'WireMock/mappings'
          files: 'Wiremock/__files'
          #command: 'java -jar wiremock-jre8-standalone-2.35.0.jar --port=8081 --https-port=8082 --enable-stub-cors '
