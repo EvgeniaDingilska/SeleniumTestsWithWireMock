@@ -30,6 +30,7 @@ jobs:
   java-and-wiremock:
     runs-on: windows-latest
     name: Set up WireMock as a standalone process
+    needs: build-node-express
     steps:
       - name: Checkout
         uses: actions/checkout@v3
