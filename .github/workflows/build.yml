@@ -23,7 +23,7 @@ jobs:
          verbos: true
          #wait on the port
          wait-on: 'http://localhost:3000'
-      Verification of website content
+      #Verification of website content
       - name: Puppeteer
         run: npm install puppeteer
       - run: node openChrome.js
